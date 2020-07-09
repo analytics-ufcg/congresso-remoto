@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="footer-container container">
+    <div class="mb-4">
+      <h4>Realização</h4>
+      <div class="row">
+        <div class="col-8 col-md-4">
+          <a
+            href="http://br.okfn.org/"
+            target="_blank">
+            OLB
+          </a>
+        </div>
+        <div class="col-8 col-md-4">
+          <a
+            href="http://analytics.ufcg.edu.br"
+            target="_blank">
+            PULSO
+          </a>
+        </div>
+        <div class="col-8 col-md-4">
+          <a
+            href="http://dadocapital.org.br/"
+            target="_blank">
+            DADO CAPITAL
+          </a>
+        </div>
+      </div>
+    </div>
+    <ul class="list-unstyled">
+      <li [routerLinkActive]="['active']">
+        <a routerLink="/home">Home</a>
+      </li>
+      <li [routerLinkActive]="['active']">
+        <a routerLink="/home">Painel</a>
+      </li>
+      <li [routerLinkActive]="['active']">
+        <a routerLink="/home">Análises</a>
+      </li>
+      <li [routerLinkActive]="['active']">
+        <a routerLink="/home">Na mídia</a>
+      </li>
+      <li [routerLinkActive]="['active']">
+        <a routerLink="/home">Sobre</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="mb-3 text-center">
+      <a
+        rel="license"
+        href="https://creativecommons.org/licenses/by/4.0">
+        <img
+          class="img-creative-commons"
+          alt="Licença Creative Commons"
+          src="https://licensebuttons.net/l/by/4.0/88x31.png">
+      </a>
+    </div>
+    <div class="footer-cc text-muted">
+      Todo o conteúdo do Congresso Remoto está disponível sob a licença
+      <a
+        rel="license"
+        href="https://creativecommons.org/licenses/by/4.0">
+        Creative Commons Atribuição 4.0 Internacional
+      </a>
+      , o que significa que pode ser compartilhado e reutilizado para trabalhos derivados, desde que citada a fonte. O código-fonte da plataforma também é aberto e está disponível no
+      <a
+        rel="license"
+        href="https://github.com/analytics-ufcg/congresso-remoto">
+        Github
+      </a>
+      .
+    </div>
+  </div>
+</footer>

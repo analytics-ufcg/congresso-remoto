@@ -1,0 +1,67 @@
+<nav
+  class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+  (click)="toggleNavbar()">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#mainNavbar"
+    aria-controls="mainNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse"
+    [ngClass]="{ 'show': navbarOpen }"
+    id="mainNavbar">
+    <ul class="navbar-nav mr-auto ml-auto">
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']">
+        <a
+          class="nav-link"
+          routerLink="/home">
+          Home
+        </a>
+      </li>
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']">
+        <a
+          class="nav-link"
+          routerLink="/home">
+          Painel
+        </a>
+      </li>
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']">
+        <a
+          class="nav-link"
+          routerLink="/home">
+          Análises
+        </a>
+      </li>
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']">
+        <a
+          class="nav-link"
+          routerLink="/home">
+          Na mídia
+        </a>
+      </li>
+      <li
+        class="nav-item"
+        [routerLinkActive]="['active']">
+        <a
+          class="nav-link"
+          routerLink="/home">
+          Sobre
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
