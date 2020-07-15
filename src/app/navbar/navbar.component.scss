@@ -1,0 +1,12 @@
+.nav-link {
+  text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #ffffff;
+  color: #3b3e99;
+  border-radius: 5rem;
+}

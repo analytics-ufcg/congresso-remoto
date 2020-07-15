@@ -1,66 +1,77 @@
 <nav
   class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
   (click)="toggleNavbar()">
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#mainNavbar"
-    aria-controls="mainNavbar"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="container">
+    <a
+      class="navbar-brand"
+      [routerLink]="['']">
+      <img
+        src="assets/imgs/logo.svg"
+        width="200"
+        alt="Congresso Reomoto"
+        loading="lazy">
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div
-    class="collapse navbar-collapse"
-    [ngClass]="{ 'show': navbarOpen }"
-    id="mainNavbar">
-    <ul class="navbar-nav mr-auto ml-auto">
-      <li
-        class="nav-item"
-        [routerLinkActive]="['active']">
-        <a
-          class="nav-link"
-          routerLink="/home">
-          Home
-        </a>
-      </li>
-      <li
-        class="nav-item">
-        <a
-          class="nav-link"
-          href="https://leggo.parlametria.org.br/congresso-remoto"
-          target="_blank">
-          Painel
-        </a>
-      </li>
-      <li
-        class="nav-item"
-        [routerLinkActive]="['active']">
-        <a
-          class="nav-link"
-          routerLink="/analises">
-          Análises
-        </a>
-      </li>
-      <li
-        class="nav-item">
-        <a
-          class="nav-link"
-          routerLink="/midia">
-          Na mídia
-        </a>
-      </li>
-      <li
-        class="nav-item"
-        [routerLinkActive]="['active']">
-        <a
-          class="nav-link"
-          routerLink="/sobre">
-          Sobre
-        </a>
-      </li>
-    </ul>
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ 'show': navbarOpen }"
+      id="mainNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li
+          class="nav-item"
+          [routerLinkActive]="['active']">
+          <a
+            class="nav-link"
+            routerLink="/home">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://leggo.parlametria.org.br/congresso-remoto"
+            target="_blank">
+            Painel
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          [routerLinkActive]="['active']">
+          <a
+            class="nav-link"
+            routerLink="/analises">
+            Análises
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          [routerLinkActive]="['active']">
+          <a
+            class="nav-link"
+            routerLink="/midia">
+            Na mídia
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          [routerLinkActive]="['active']">
+          <a
+            class="nav-link"
+            routerLink="/sobre">
+            Sobre
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
