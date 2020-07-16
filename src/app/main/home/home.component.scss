@@ -2,9 +2,13 @@
   background-color: #3b3e99;
   color: #fff;
   display: flex;
-  height: 60vh;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @media (min-width: 576px) {
+    height: 60vh;
+  }
 }
 
 .home-container {
