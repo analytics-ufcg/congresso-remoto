@@ -72,11 +72,13 @@ $simbolo-width-3: 50px;
 
 .simbolo-titulos {
   width: 70px;
-  height: 30px;
+  height: 15px;
   border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
   background-color: $blue2;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   padding-right: 6px;
   margin-bottom: 0.5rem;
@@ -84,8 +86,9 @@ $simbolo-width-3: 50px;
   > div {
     background-color: $white;
     width: 22px;
-    height: 22px;
-    border-radius: 50%;
+    height: 11px; 
+    border-radius: 0 0 125px 125px;
+    margin-bottom: 0.1rem;
   }
 }
 
