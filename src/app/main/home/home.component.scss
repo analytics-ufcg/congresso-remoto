@@ -1,6 +1,24 @@
-.home-container {
+.home-wrapper {
+  background-color: #3b3e99;
+  color: #fff;
+  display: flex;
   height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  height: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.home-text {
+  width: 520px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
