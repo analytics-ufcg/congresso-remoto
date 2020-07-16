@@ -6,7 +6,7 @@
 
 body {
   min-height: 75rem;
-  padding-top: 3.5rem;
+  padding-top: 82px;
 }
 
 .app-container {
@@ -18,10 +18,22 @@ body {
   margin-bottom: 4rem;
 }
 
+$simbolo-width-1: 20px;
+$simbolo-width-2: 40px;
+$simbolo-width-3: 50px;
+
 .simbolo {
-  width: 60px;
-  height: 120px;
+  width: $simbolo-width-1;
+  height: $simbolo-width-1 * 2;
   background-color: $blue;
+  @media (min-width: 576px) {
+    width: $simbolo-width-2;
+    height: $simbolo-width-2 * 2;
+  }
+  @media (min-width: 992px) {
+    width: $simbolo-width-3;
+    height: $simbolo-width-3 * 2;
+  }
 }
 
 .simbolo-inverse {
@@ -29,11 +41,27 @@ body {
 }
 
 .simbolo-left {
-  border-top-left-radius: 60px;
-  border-bottom-left-radius: 60px;
+  border-top-left-radius: $simbolo-width-1;
+  border-bottom-left-radius: $simbolo-width-1;
+  @media (min-width: 576px) {
+    border-top-left-radius: $simbolo-width-2;
+    border-bottom-left-radius: $simbolo-width-2;
+  }
+  @media (min-width: 992px) {
+    border-top-left-radius: $simbolo-width-3;
+    border-bottom-left-radius: $simbolo-width-3;
+  }
 }
 
 .simbolo-right {
-  border-top-right-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-top-right-radius: $simbolo-width-1;
+  border-bottom-right-radius: $simbolo-width-1;
+  @media (min-width: 576px) {
+    border-top-right-radius: $simbolo-width-2;
+    border-bottom-right-radius: $simbolo-width-2;
+  }
+  @media (min-width: 992px) {
+    border-top-right-radius: $simbolo-width-3;
+    border-bottom-right-radius: $simbolo-width-3;
+  }
 }

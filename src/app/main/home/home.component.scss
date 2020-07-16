@@ -8,10 +8,12 @@
 }
 
 .home-container {
-  height: 215px;
   display: flex;
   justify-content: center;
   align-items: stretch;
+  @media (min-width: 576px) {
+    height: 215px;
+  }
 }
 
 .home-text {
