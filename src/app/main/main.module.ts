@@ -6,13 +6,15 @@ import { MainRoutingModule } from './main-routing.module';
 import { AnalisesComponent } from './analises/analises.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MidiaComponent } from './midia/midia.component';
+import { PodcastsComponent } from './podcasts/podcasts.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     AnalisesComponent,
     SobreComponent,
-    MidiaComponent
+    MidiaComponent,
+    PodcastsComponent
   ],
   imports: [
     CommonModule,
