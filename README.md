@@ -7,6 +7,14 @@
 
 ## Como desenvolver
 
-Primeiro, instale as dependências do projeto com npm install.
+### Dependências
 
-O comando npm start irá subir um servidor em modo de desenvolvimento. Navegue até http://localhost:4200/ para ver. O aplicativo vai recarregar automaticamente quando houverem mudanças no código fonte.
+Primeiro, instale as dependências do projeto com `npm install`.
+
+### Modo de desenvolvimento
+
+Utilize `npm run start-dev` e navegue até http://localhost:4200/ para ver o app em modo de desenvolvimento.
+
+### Build
+
+O comando `npm run build` processa o app e o prepara para deploy. O comando `npm start` irá subir um servidor com esta versão preparada. É útil para testar o app antes do deploy em produção.
