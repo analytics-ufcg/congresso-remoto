@@ -143,6 +143,10 @@
               "devServerTarget": "congresso-remoto-site:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
